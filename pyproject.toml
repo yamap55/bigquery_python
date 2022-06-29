@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "python_repository_simple"
+version = "0.0.0"
+description = "python_repository_simple"
+authors = ["yamap55"]
+license = "Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+# lint
+flake8 = "4.0.1"
+black = "22.6.0"
+flake8-docstrings = "1.6.0"
+flake8-quotes = "3.3.1"
+flake8-bugbear = "22.6.22"
+
+# test
+pytest = "7.1.2"
+pytest-cov = "3.0.0"
+
+# notebook
+ipykernel = "6.15.0"
+
+[tool.pytest.ini_options]
+junit_family = "xunit1"
+addopts = "--verbose --cov --showlocals --durations=5"
+
+[tool.coverage.run]
+omit = ["*/tests/*", "*/site-packages/*"]
