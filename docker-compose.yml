@@ -12,3 +12,4 @@ services:
     image: bigquery_python-image
     container_name: bigquery_python-container
     tty: true
+    env_file: .env # shellスクリプト内でも環境変数として使用するため
