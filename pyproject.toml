@@ -6,7 +6,8 @@ authors = ["yamap55"]
 license = "Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.9"
+google-cloud-bigquery = {version = "3.2.0", python = "3.9,<3.11"}
 
 [tool.poetry.dev-dependencies]
 # lint
