@@ -51,7 +51,7 @@ def read_sql_file(sql_path: str) -> str:
     str
        SQLファイルの内容
     """
-    with open(sql_path) as f:
+    with open(sql_path, encoding="utf-8") as f:
         return f.read()
 
 
